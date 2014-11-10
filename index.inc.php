@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (basename(__FILE__) == basename($_SERVER['PHP_SELF']))
 {
@@ -12,12 +12,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
-  <title>PHProxy</title>
+  <title>Aws Web Proxy</title>
   <link rel="stylesheet" type="text/css" href="style.css" title="Default Theme" media="all" />
 </head>
 <body onload="document.getElementById('address_box').focus()">
 <div id="container">
-  <h1 id="title">PHProxy</h1>
+  <h1 id="title">Aws Web Proxy</h1>
   <ul id="navigation">
     <li><a href="<?php echo $GLOBALS['_script_base'] ?>">URL Form</a></li>
     <li><a href="javascript:alert('cookie managment has not been implemented yet')">Manage Cookies</a></li>
@@ -38,7 +38,7 @@ switch ($data['category'])
         break;
     case 'error':
         echo '<div id="error"><p>';
-        
+
         switch ($data['group'])
         {
             case 'url':
@@ -79,7 +79,7 @@ switch ($data['category'])
                 }
                 break;
         }
-        
+
         echo 'An error has occured while trying to browse through the proxy. <br />' . $message . '</p></div>';
         break;
 }
@@ -88,7 +88,7 @@ switch ($data['category'])
     <ul id="form">
       <li id="address_bar"><label>Web Address <input id="address_box" type="text" name="<?php echo $GLOBALS['_config']['url_var_name'] ?>" value="<?php echo isset($GLOBALS['_url']) ? htmlspecialchars($GLOBALS['_url']) : '' ?>" onfocus="this.select()" /></label> <input id="go" type="submit" value="Go" /></li>
       <?php
-      
+
       foreach ($GLOBALS['_flags'] as $flag_name => $flag_value)
       {
           if (!$GLOBALS['_frozen_flags'][$flag_name])
@@ -101,7 +101,7 @@ switch ($data['category'])
   </form>
   <!-- The least you could do is leave this link back as it is. This software is provided for free and I ask nothing in return except that you leave this link intact
        You're more likely to recieve support should you require some if I see a link back in your installation than if not -->
-  <div id="footer"><a href="http://whitefyre.com/poxy/">PHProxy</a> <?php echo $GLOBALS['_version'] ?></div>
+  <div id="footer">Powered by aws and boxgue.com</div>
 </div>
 </body>
 </html>
