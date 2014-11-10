@@ -14,6 +14,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 <head>
   <title>Aws Web Proxy</title>
   <link rel="stylesheet" type="text/css" href="style.css" title="Default Theme" media="all" />
+  <link rel="icon" type="image/ico" href="favicon.ico"/>
 </head>
 <body onload="document.getElementById('address_box').focus()">
 <div id="container">
