@@ -41,7 +41,7 @@ $_config            = array
                     );
 $_flags             = array
                     (
-                        'include_form'    => 1,
+                        'include_form'    => 0,
                         'remove_scripts'  => 0,
                         'accept_cookies'  => 1,
                         'show_images'     => 1,
